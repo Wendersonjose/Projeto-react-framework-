@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+Lancheirinha da Nutri 🍴
+Um projeto de e-commerce para gerenciar produtos de uma loja virtual. O sistema é dividido em frontend e backend, permitindo o cadastro, listagem, edição e exclusão de produtos, com upload de imagens.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🛠️ Funcionalidades
+Frontend:
 
-## Available Scripts
+Interface estilizada utilizando React e Bootstrap.
+Página de listagem de produtos.
+Formulário para criação de novos produtos, incluindo upload de imagens.
+Backend:
 
-In the project directory, you can run:
+API desenvolvida em Node.js com Express.
+Gerenciamento de produtos utilizando banco de dados MySQL.
+Upload de imagens com Multer.
+Suporte a operações CRUD: Create, Read, Update e Delete.
+🚀 Tecnologias Utilizadas
+Frontend
+React
+Bootstrap
+Axios (para comunicação com a API)
+Backend
+Node.js
+Express
+MySQL
+Multer (para upload de arquivos)
+Cors (para lidar com o acesso cross-origin)
+📂 Estrutura de Pastas
+csharp
+Copiar código
+LANCHEIRINHA-DA-NUTRI/
+├── backend/
+│   ├── controllers/         # Controladores da aplicação
+│   ├── models/              # Modelos de banco de dados (opcional)
+│   ├── routes/              # Rotas da API
+│   ├── uploads/             # Diretório para uploads de imagens
+│   ├── db.js                # Configuração do banco de dados
+│   ├── server.js            # Servidor principal
+├── frontend/
+│   ├── public/              # Arquivos públicos
+│   ├── src/                 # Código-fonte do React
+│   │   ├── components/      # Componentes reutilizáveis
+│   │   ├── api/             # Configuração de conexão com API
+│   │   ├── App.js           # Componente principal
+│   │   ├── index.js         # Ponto de entrada do React
+├── .gitignore
+├── README.md
+🔧 Instalação
+1. Clonar o Repositório
+bash
+Copiar código
+git clone https://github.com/seu-usuario/lancheirinha-da-nutri.git
+cd lancheirinha-da-nutri
+2. Configurar o Backend
+Navegue para a pasta do backend:
+bash
+Copiar código
+cd backend
+Instale as dependências:
+bash
+Copiar código
+npm install
+Certifique-se de que o MySQL está configurado e rodando. Atualize o arquivo db.js com suas credenciais.
+Inicie o servidor backend:
+bash
+Copiar código
+node server.js
+3. Configurar o Frontend
+Navegue para a pasta do frontend:
+bash
+Copiar código
+cd ../frontend
+Instale as dependências:
+bash
+Copiar código
+npm install
+Inicie o servidor frontend:
+bash
+Copiar código
+npm start
+4. Acessar a Aplicação
+Frontend: http://localhost:3001
+Backend API: http://localhost:3000/api/products
+📷 Screenshots
+Página de Listagem de Produtos
 
-### `npm start`
+Formulário de Criação de Produtos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🤝 Contribuição
+Sinta-se à vontade para contribuir! Abra uma issue ou envie um pull request.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+📜 Licença
+Este projeto está licenciado sob a MIT License.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
